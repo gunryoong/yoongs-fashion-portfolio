@@ -11,13 +11,17 @@ const list = document.querySelector("[data-cat]");
 if (list) {
   const items = PROJECTS[list.dataset.cat] || [];
 
+  const works = items.filter((p) => p.kind !== "collection");
+  const no = (p) => pad2(works.indexOf(p) + 1);
+
   const index = document.querySelector("[data-index]");
   if (index) {
-    index.innerHTML = items.map((p, i) =>
-      `<a class="pill" href="#${p.id}">${pad2(i + 1)} ${p.sub ? p.title + " — " + p.sub : p.title}</a>`).join("");
+    index.innerHTML = items.map((p) => p.kind === "collection"
+      ? `<a class="pill col" href="#${p.id}">${p.title}</a>`
+      : `<a class="pill" href="#${p.id}">${no(p)} ${p.sub ? p.title + " — " + p.sub : p.title}</a>`).join("");
   }
 
-  list.innerHTML = items.map((p, i) => {
+  list.innerHTML = items.map((p) => {
     const award = awardOf(p.id);
     const tags = [
       award ? `<span class="award">${award.year} ${award.rank}</span>` : "",
@@ -27,10 +31,31 @@ if (list) {
     const spec = p.spec ? `<ul class="spec">${p.spec.map((s) => `<li>${s}</li>`).join("")}</ul>` : "";
     const awardLine = award ? `<p><b>${award.rank}</b> — ${award.contest}</p>` : "";
 
+    // 컬렉션 머리: 무드 이미지 + 원단
+    if (p.kind === "collection") {
+      return `<section class="collection" id="${p.id}">
+        <p class="label">Collection</p>
+        <div class="project-head">
+          <h2 class="display rise">${p.title}${p.sub ? `<span class="sub">${p.sub}</span>` : ""}</h2>
+          <div class="card rise">${text}${spec}</div>
+        </div>
+        ${p.mood ? galleryHTML({ title: p.title, images: p.mood }) : ""}
+        ${p.fabric ? `<p class="part">Fabric</p><div class="gallery swatch">${shots(p.fabric, p.title)}</div>` : ""}
+      </section>`;
+    }
+
     let media = "";
     if (p.video) {
       media = `<div class="film ${p.ratio === "9:16" ? "tall" : ""}">
         <video src="${p.video}" poster="${p.poster}" controls playsinline preload="none"></video></div>`;
+    } else if (p.flat) {
+      // 디자인 상품: 대표컷 + 도식화 / 누끼컷 / 착용·디테일컷
+      const cuts = p.images.filter((im) => im[3]);
+      const rest = p.images.filter((im) => !im[3]);
+      media = `<p class="part">Model · Flat Sketch</p><div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}</div>
+        ${cuts.length ? `<p class="part">Product Cut</p><div class="gallery cuts">${shots(cuts, p.title)}</div>` : ""}
+        <p class="part">Lookbook &amp; Detail</p>
+        ${galleryHTML({ title: p.title, images: rest }, 6)}`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }
@@ -39,7 +64,7 @@ if (list) {
       <div class="project-head">
         <h2 class="display rise">${p.title}${p.sub ? `<span class="sub">${p.sub}</span>` : ""}</h2>
         <div class="card rise">
-          <p class="k">${pad2(i + 1)} / ${pad2(items.length)}</p>
+          <p class="k">${no(p)} / ${pad2(works.length)}</p>
           <div class="tags">${tags}</div>
           ${awardLine}${text}${spec}
         </div>
@@ -57,18 +82,21 @@ if (list) {
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
 }
 
-function galleryHTML(p) {
-  // 배열 방식: pairs(전/후 2장씩) · wide(가로 이미지 위주) · 기본(세로 위주, 매거진형 열 배치)
+function shots(list, alt, cls = "", limit = Infinity) {
+  return list.map(([src, w, h, cut], i) =>
+    `<a class="shot${cls ? " " + cls : ""}${cut ? " cut" : ""}${w > h * 1.15 ? " land" : ""}${i >= limit ? " extra" : ""}" href="${src}">
+      <img src="${src}" width="${w}" height="${h}" alt="${alt}" loading="lazy"></a>`).join("");
+}
+
+function galleryHTML(p, show = SHOW) {
+  // 배열 방식: pairs(전/후 2장씩) · wide(가로 이미지 위주) · 기본(세로 위주)
   const wideCount = p.images.filter(([, w, h]) => w > h).length;
   const ratios = p.images.map(([, w, h]) => w / h);
   const mixed = Math.max(...ratios) / Math.min(...ratios) > 1.3;
   const kind = p.pairs ? "pairs" : wideCount > p.images.length / 2 ? (mixed ? "wide mixed" : "wide") : "cols";
-  const limit = p.pairs ? 8 : SHOW; // 전/후 쌍이 갈라지지 않게
+  const limit = p.pairs ? 8 : show; // 전/후 쌍이 갈라지지 않게
   const folded = p.images.length > limit + 2;
-  const figs = p.images.map(([src, w, h], i) =>
-    `<a class="shot${w > h * 1.15 ? " land" : ""}${folded && i >= limit ? " extra" : ""}" href="${src}">
-      <img src="${src}" width="${w}" height="${h}" alt="${p.title}" loading="lazy"></a>`).join("");
-  return `<div class="gallery ${kind}${folded ? " folded" : ""}" data-title="${p.title}">${figs}</div>
+  return `<div class="gallery ${kind}${folded ? " folded" : ""}">${shots(p.images, p.title, "", folded ? limit : Infinity)}</div>
     ${folded ? `<button class="pill more">+ ${p.images.length - limit} 더 보기</button>` : ""}`;
 }
 
@@ -79,19 +107,19 @@ box.innerHTML = `<img alt=""><button class="x pill">Close</button>
   <button class="nav prev" aria-label="prev"></button><button class="nav next" aria-label="next"></button>
   <span class="count pill"></span>`;
 document.body.appendChild(box);
-let shots = [], cur = 0;
+let pics = [], cur = 0;
 const show = (n) => {
-  cur = (n + shots.length) % shots.length;
-  box.querySelector("img").src = shots[cur].getAttribute("href");
-  box.querySelector(".count").textContent = `${pad2(cur + 1)} / ${pad2(shots.length)}`;
+  cur = (n + pics.length) % pics.length;
+  box.querySelector("img").src = pics[cur].getAttribute("href");
+  box.querySelector(".count").textContent = `${pad2(cur + 1)} / ${pad2(pics.length)}`;
 };
 const close = () => { box.classList.remove("on"); document.body.style.overflow = ""; };
 document.addEventListener("click", (e) => {
   const a = e.target.closest(".shot");
   if (!a) return;
   e.preventDefault();
-  shots = [...a.parentElement.querySelectorAll(".shot")];
-  show(shots.indexOf(a));
+  pics = [...a.parentElement.querySelectorAll(".shot")];
+  show(pics.indexOf(a));
   box.classList.add("on");
   document.body.style.overflow = "hidden";
 });

@@ -1082,24 +1082,21 @@ const PROJECTS = {
  ],
  "design": [
   {
-   "id": "verdnt-branding",
+   "kind": "collection",
+   "id": "verdnt-crew",
    "title": "VERDNT CREW",
-   "sub": "Branding & Logo",
-   "tags": [
-    "Branding",
-    "Logo Design"
-   ],
+   "sub": "Branding & Fashion Design",
    "text": [
     "디자인 실무와 동시에 기획과 브랜딩 감각을 겹겹이 쌓아온 패션 디자이너입니다.",
     "데이터보다 감각이 먼저, 하지만 숫자로 결과를 설명할 줄 아는 사람입니다."
    ],
    "spec": [
-    "Design. 소재 특유의 질감과 실루엣에 집중, 스티치·주름·절개선 등 작은 디자인 요소로 디테일 포인트",
+    "Design — 소재 특유의 질감과 실루엣에 집중, 스티치·주름·절개선 등 작은 디자인 요소로 디테일 포인트",
     "가먼트 다잉, 틴트 워싱 등 가공을 활용한 브랜드 방향성 유지",
-    "Color. Black / Khaki / Brown / Charcoal",
-    "Fabric. Camouflage / Corduroy / Napping / Herringbone / Wool / CVC Terry / Nylon"
+    "Color — Black / Khaki / Brown / Charcoal",
+    "Fabric — Camouflage / Corduroy / Napping / Herringbone / Wool / CVC Terry / Nylon"
    ],
-   "images": [
+   "mood": [
     [
      "assets/design/branding-01.webp",
      1351,
@@ -1108,7 +1105,41 @@ const PROJECTS = {
     [
      "assets/design/branding-02.webp",
      801,
-     574
+     574,
+     1
+    ]
+   ],
+   "fabric": [
+    [
+     "assets/design/fabric-1-01.webp",
+     1200,
+     1800,
+     1
+    ],
+    [
+     "assets/design/fabric-1-02.webp",
+     587,
+     803
+    ],
+    [
+     "assets/design/fabric-1-03.webp",
+     1208,
+     801
+    ],
+    [
+     "assets/design/fabric-1-04.webp",
+     1200,
+     1800
+    ],
+    [
+     "assets/design/fabric-1-05.webp",
+     1207,
+     799
+    ],
+    [
+     "assets/design/fabric-1-06.webp",
+     1204,
+     805
     ]
    ]
   },
@@ -1116,7 +1147,6 @@ const PROJECTS = {
    "id": "cut-block-padding",
    "title": "CUT BLOCK QUILTED HOOD PADDING JUMPER",
    "tags": [
-    "Fashion Design",
     "Outer"
    ],
    "text": [
@@ -1128,6 +1158,17 @@ const PROJECTS = {
     "Design — 차별화된 퀼팅 라인, 경량 소재 사용으로 가볍고 편안한 착용감",
     "Color — Black / Khaki / Blue",
     "Fabric — Outshell nylon 60%, poly 40% · Filling poly 100%"
+   ],
+   "cover": [
+    "assets/design/cover1-01.webp",
+    1200,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat1-01.webp",
+    1690,
+    882,
+    1
    ],
    "images": [
     [
@@ -1208,12 +1249,14 @@ const PROJECTS = {
     [
      "assets/design/d1-16.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d1-17.webp",
      1200,
-     1800
+     1800,
+     1
     ]
    ]
   },
@@ -1221,7 +1264,6 @@ const PROJECTS = {
    "id": "pigment-hood",
    "title": "WASHED PIGMENT DYEING HOOD SWEATSHIRT",
    "tags": [
-    "Fashion Design",
     "Top"
    ],
    "text": [
@@ -1233,6 +1275,17 @@ const PROJECTS = {
     "Design — 피그먼트 다잉과 에어브러시 워싱으로 빈티지함 강조, 고중량 테리 원단으로 보온성 강화",
     "Color — Black / Navy",
     "Fabric — Cotton 80%, Poly 20% · Terry 400GSM"
+   ],
+   "cover": [
+    "assets/design/cover2-01.webp",
+    1199,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat2-01.webp",
+    1574,
+    850,
+    1
    ],
    "images": [
     [
@@ -1303,35 +1356,100 @@ const PROJECTS = {
     [
      "assets/design/d2-14.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-15.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-16.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-17.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-18.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-19.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d2-20.webp",
+     1200,
+     1800,
+     1
+    ]
+   ]
+  },
+  {
+   "kind": "collection",
+   "id": "livebold-25ss",
+   "title": "VERDNT · LIVEBOLD",
+   "sub": "25 S/S Collection",
+   "text": [
+    "피그먼트 워싱으로 완성된 자연스러운 컬러 페이딩.",
+    "러프한 질감의 패브릭 표현을 포인트로 한 세미 빈티지 스트릿 무드."
+   ],
+   "spec": [
+    "Color — Black / White / Charcoal / Pink / Green / Timber",
+    "Fabric — Denim / Twill / CVC Terry / Oxford"
+   ],
+   "mood": [
+    [
+     "assets/design/mood-2-01.webp",
+     720,
+     898
+    ],
+    [
+     "assets/design/mood-2-02.webp",
+     1200,
+     1790
+    ],
+    [
+     "assets/design/mood-2-03.webp",
+     670,
+     907
+    ],
+    [
+     "assets/design/mood-2-04.webp",
+     1080,
+     1350
+    ]
+   ],
+   "fabric": [
+    [
+     "assets/design/fabric-2-01.webp",
+     1200,
+     1800
+    ],
+    [
+     "assets/design/fabric-2-02.webp",
+     1200,
+     1800
+    ],
+    [
+     "assets/design/fabric-2-03.webp",
+     1200,
+     1800
+    ],
+    [
+     "assets/design/fabric-2-04.webp",
      1200,
      1800
     ]
@@ -1341,7 +1459,6 @@ const PROJECTS = {
    "id": "incisional-work-shirt",
    "title": "INCISIONAL WORK SHIRT",
    "tags": [
-    "VERDNT · LIVEBOLD 25S/S",
     "Shirt"
    ],
    "text": [
@@ -1353,11 +1470,23 @@ const PROJECTS = {
     "Color — Black / Khaki / Timber",
     "Fabric — Cotton 100%"
    ],
+   "cover": [
+    "assets/design/cover3-01.webp",
+    1200,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat3-01.webp",
+    1628,
+    773,
+    1
+   ],
    "images": [
     [
      "assets/design/d3-01.webp",
      1800,
-     1200
+     1200,
+     1
     ],
     [
      "assets/design/d3-02.webp",
@@ -1367,7 +1496,8 @@ const PROJECTS = {
     [
      "assets/design/d3-03.webp",
      1200,
-     1769
+     1769,
+     1
     ],
     [
      "assets/design/d3-04.webp",
@@ -1422,12 +1552,14 @@ const PROJECTS = {
     [
      "assets/design/d3-14.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d3-15.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d3-16.webp",
@@ -1437,27 +1569,32 @@ const PROJECTS = {
     [
      "assets/design/d3-17.webp",
      1800,
-     1539
+     1539,
+     1
     ],
     [
      "assets/design/d3-18.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d3-19.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d3-20.webp",
      1500,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d3-21.webp",
      1671,
-     1800
+     1800,
+     1
     ]
    ]
   },
@@ -1465,7 +1602,6 @@ const PROJECTS = {
    "id": "carpenter-bermuda",
    "title": "DYING WASHED CARPENTER BERMUDA PANTS",
    "tags": [
-    "VERDNT · LIVEBOLD 25S/S",
     "Bottom"
    ],
    "text": [
@@ -1477,11 +1613,23 @@ const PROJECTS = {
     "Color — Black / Khaki / Pink / Timber",
     "Fabric — Cotton 100% Twill"
    ],
+   "cover": [
+    "assets/design/cover4-01.webp",
+    1200,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat4-01.webp",
+    1608,
+    841,
+    1
+   ],
    "images": [
     [
      "assets/design/d4-01.webp",
      1800,
-     1200
+     1200,
+     1
     ],
     [
      "assets/design/d4-02.webp",
@@ -1491,7 +1639,8 @@ const PROJECTS = {
     [
      "assets/design/d4-03.webp",
      1199,
-     1767
+     1767,
+     1
     ],
     [
      "assets/design/d4-04.webp",
@@ -1536,22 +1685,26 @@ const PROJECTS = {
     [
      "assets/design/d4-12.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-13.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-14.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-15.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-16.webp",
@@ -1561,17 +1714,20 @@ const PROJECTS = {
     [
      "assets/design/d4-17.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-18.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-19.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-20.webp",
@@ -1581,12 +1737,14 @@ const PROJECTS = {
     [
      "assets/design/d4-21.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d4-22.webp",
      1200,
-     1800
+     1800,
+     1
     ]
    ]
   },
@@ -1594,7 +1752,6 @@ const PROJECTS = {
    "id": "construction-denim",
    "title": "CONSTRUCTION WIDE DENIM PANTS",
    "tags": [
-    "VERDNT · LIVEBOLD 25S/S",
     "Bottom"
    ],
    "text": [
@@ -1606,11 +1763,23 @@ const PROJECTS = {
     "Color — Dust Black / Sand Blue",
     "Fabric — Cotton Denim 100%"
    ],
+   "cover": [
+    "assets/design/cover5-01.webp",
+    1146,
+    1719
+   ],
+   "flat": [
+    "assets/design/flat5-01.webp",
+    1072,
+    931,
+    1
+   ],
    "images": [
     [
      "assets/design/d5-01.webp",
      1800,
-     1200
+     1200,
+     1
     ],
     [
      "assets/design/d5-02.webp",
@@ -1620,7 +1789,8 @@ const PROJECTS = {
     [
      "assets/design/d5-03.webp",
      1200,
-     1770
+     1770,
+     1
     ],
     [
      "assets/design/d5-04.webp",
@@ -1710,7 +1880,8 @@ const PROJECTS = {
     [
      "assets/design/d5-21.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-22.webp",
@@ -1730,27 +1901,32 @@ const PROJECTS = {
     [
      "assets/design/d5-25.webp",
      1743,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-26.webp",
      1239,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-27.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-28.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-29.webp",
      1200,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d5-30.webp",
@@ -1760,10 +1936,54 @@ const PROJECTS = {
    ]
   },
   {
+   "kind": "collection",
+   "id": "agod",
+   "title": "AGOD",
+   "sub": "Collection",
+   "text": [
+    "데일리한 아이템에 트렌디 캐주얼 무드를 반영한 디자인.",
+    "전체적인 제품의 실루엣을 오버핏으로 제작하여 편안하게 입을 수 있는 제품들로 구성."
+   ],
+   "spec": [
+    "Color — Grey / Khaki / Charcoal / Beige / Vintage Washing / Black"
+   ],
+   "mood": [
+    [
+     "assets/design/mood-3-01.webp",
+     735,
+     979
+    ],
+    [
+     "assets/design/mood-3-02.webp",
+     1125,
+     1095
+    ],
+    [
+     "assets/design/mood-3-03.webp",
+     736,
+     1104
+    ],
+    [
+     "assets/design/mood-3-04.webp",
+     900,
+     1200
+    ],
+    [
+     "assets/design/mood-3-05.webp",
+     643,
+     938
+    ],
+    [
+     "assets/design/mood-3-06.webp",
+     1170,
+     1782
+    ]
+   ]
+  },
+  {
    "id": "biker-jacket",
    "title": "FAKE LEATHER STANDARD BIKER JACKET",
    "tags": [
-    "AGOD",
     "Outer"
    ],
    "text": [
@@ -1776,6 +1996,17 @@ const PROJECTS = {
     "Color — Brown / Black",
     "Fabric — Outshell Polyurethane 100% · Lining Polyester 100%"
    ],
+   "cover": [
+    "assets/design/cover6-01.webp",
+    1200,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat6-01.webp",
+    1660,
+    807,
+    1
+   ],
    "images": [
     [
      "assets/design/d6-01.webp",
@@ -1785,7 +2016,8 @@ const PROJECTS = {
     [
      "assets/design/d6-02.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-03.webp",
@@ -1840,42 +2072,50 @@ const PROJECTS = {
     [
      "assets/design/d6-13.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-14.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-15.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-16.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-17.webp",
      1800,
-     1231
+     1231,
+     1
     ],
     [
      "assets/design/d6-18.webp",
      1201,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d6-19.webp",
      1800,
-     1201
+     1201,
+     1
     ],
     [
      "assets/design/d6-20.webp",
      1800,
-     1197
+     1197,
+     1
     ]
    ]
   },
@@ -1883,7 +2123,6 @@ const PROJECTS = {
    "id": "cropped-denim-jacket",
    "title": "WASHED CROPPED ZIP-UP DENIM JACKET",
    "tags": [
-    "Fashion Design",
     "Outer"
    ],
    "text": [
@@ -1893,6 +2132,17 @@ const PROJECTS = {
     "Design — 스톤바이오 워싱 & 샌드블라스트 가공, 크롭한 기장감과 넓은 어깨라인으로 체형 보완",
     "Color — Raw Indigo / Grey / Vintage / Indigo",
     "Fabric — 13.5oz Cotton Denim 100%"
+   ],
+   "cover": [
+    "assets/design/cover7-01.webp",
+    1450,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat7-01.webp",
+    1631,
+    832,
+    1
    ],
    "images": [
     [
@@ -1993,17 +2243,20 @@ const PROJECTS = {
     [
      "assets/design/d7-20.webp",
      1800,
-     1538
+     1538,
+     1
     ],
     [
      "assets/design/d7-21.webp",
      1800,
-     1406
+     1406,
+     1
     ],
     [
      "assets/design/d7-22.webp",
      1800,
-     1538
+     1538,
+     1
     ],
     [
      "assets/design/d7-23.webp",
@@ -2013,7 +2266,8 @@ const PROJECTS = {
     [
      "assets/design/d7-24.webp",
      1800,
-     1519
+     1519,
+     1
     ]
    ]
   },
@@ -2021,7 +2275,6 @@ const PROJECTS = {
    "id": "peach-skin-pants",
    "title": "SIDE INCISION POCKET PEACH SKIN COTTON PANTS",
    "tags": [
-    "AGOD",
     "Bottom"
    ],
    "text": [
@@ -2034,6 +2287,17 @@ const PROJECTS = {
     "Color — Beige / Brown / Light Khaki / Black",
     "Fabric — Cotton 100% Peach Twill"
    ],
+   "cover": [
+    "assets/design/cover8-01.webp",
+    1200,
+    1800
+   ],
+   "flat": [
+    "assets/design/flat8-01.webp",
+    1106,
+    906,
+    1
+   ],
    "images": [
     [
      "assets/design/d8-01.webp",
@@ -2043,22 +2307,26 @@ const PROJECTS = {
     [
      "assets/design/d8-02.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-03.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-04.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-05.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-06.webp",
@@ -2143,62 +2411,74 @@ const PROJECTS = {
     [
      "assets/design/d8-22.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-23.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-24.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-25.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-26.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-27.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-28.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-29.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-30.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-31.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-32.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-33.webp",
      1800,
-     1800
+     1800,
+     1
     ],
     [
      "assets/design/d8-34.webp",
