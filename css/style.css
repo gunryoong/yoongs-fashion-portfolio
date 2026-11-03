@@ -168,7 +168,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .gallery.cols { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-flow: dense; }
 .gallery.cols .shot { aspect-ratio: 2 / 3; }
 .gallery.cols .land { grid-column: span 2; aspect-ratio: auto; }
-.gallery.cols img { width: 100%; height: 100%; object-fit: contain; }
+.gallery.cols img { width: 100%; height: 100%; object-fit: cover; }
 .gallery.wide { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
 .gallery.pairs { grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; }
 .gallery.mixed { display: block; columns: 2; column-gap: 8px; }
@@ -194,10 +194,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .gallery.lead { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .gallery.lead .shot { aspect-ratio: 2 / 3; }
 .gallery.lead .flat { grid-column: span 3; aspect-ratio: auto; padding: 3%; }
-.gallery.lead img { width: 100%; height: 100%; object-fit: contain; }
+.gallery.lead img { width: 100%; height: 100%; object-fit: cover; }
+.gallery.lead .flat img { object-fit: contain; }
 .gallery.tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .gallery.tiles .shot { aspect-ratio: 1 / 1; }
-.gallery.tiles img { width: 100%; height: 100%; object-fit: contain; }
+.gallery.tiles img { width: 100%; height: 100%; object-fit: cover; }
 .gallery.swatch { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .gallery.swatch .shot { aspect-ratio: 1 / 1; }
 .gallery.swatch img { width: 100%; height: 100%; object-fit: cover; }

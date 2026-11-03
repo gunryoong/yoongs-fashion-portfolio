@@ -49,13 +49,13 @@ if (list) {
       media = `<div class="film ${p.ratio === "9:16" ? "tall" : ""}">
         <video src="${p.video}" poster="${p.poster}" controls playsinline preload="none"></video></div>`;
     } else if (p.flat) {
-      // 디자인 상품: 대표컷·도식화 / 룩북 / 제품컷 / 디테일
+      // 디자인 상품: 대표컷·도식화 / 룩북 / 제품·디테일컷
       const part = (n, name, list) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(list.length)}</span></p>`;
       media = `${part("A", "Model &amp; Flat Sketch", [p.cover, p.flat])}
         <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}</div>
         ${part("B", "Lookbook", p.look)}${galleryHTML({ title: p.title, images: p.look }, 8)}
-        ${p.cuts.length ? part("C", "Product Cut", p.cuts) + `<div class="gallery tiles">${shots(p.cuts, p.title)}</div>` : ""}
-        ${p.details.length ? part(p.cuts.length ? "D" : "C", "Detail", p.details) + `<div class="gallery tiles">${shots(p.details, p.title)}</div>` : ""}`;
+        ${part("C", "Product &amp; Detail", [...p.cuts, ...p.details])}
+        <div class="gallery tiles">${shots([...p.cuts, ...p.details], p.title)}</div>`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }
