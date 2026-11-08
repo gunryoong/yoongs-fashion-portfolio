@@ -50,15 +50,13 @@ if (list) {
       media = `<div class="film ${p.ratio === "9:16" ? "tall" : ""}">
         <video src="${p.video}" poster="${p.poster}" controls playsinline preload="none"></video></div>`;
     } else if (p.flat) {
-      // 디자인 상품: 대표컷·도식화·제품컷 한 줄 / 룩북 2줄 / 제품컷 1줄 + 디테일 1줄
+      // 디자인 상품: 대표컷·도식화·제품컷 한 줄 / 룩북 2줄 / 제품컷 1줄
       const part = (n, name, count) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(count)}</span></p>`;
       const cuts = p.cuts.slice(1);
       media = `${part("A", "Overview", 3)}
         <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}${shots(p.cuts.slice(0, 1), p.title)}</div>
         ${part("B", "Lookbook", p.look.length)}${foldGrid("cols", p.look, p.title, 8)}
-        ${part("C", "Product &amp; Detail", cuts.length + p.details.length)}
-        <div class="fold-group">${foldGrid("tiles", cuts, p.title, 6, false)}${foldGrid("tiles", p.details, p.title, 6, false)}
-          ${cuts.length > 6 || p.details.length > 6 ? `<button class="pill more">+ ${Math.max(0, cuts.length - 6) + Math.max(0, p.details.length - 6)} 더 보기</button>` : ""}</div>`;
+        ${part("C", "Product", cuts.length)}${foldGrid("tiles", cuts, p.title, 6)}`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }
