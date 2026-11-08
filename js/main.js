@@ -37,10 +37,11 @@ if (list) {
         <p class="label">Collection</p>
         <div class="project-head">
           <h2 class="display rise">${p.title}${p.sub ? `<span class="sub">${p.sub}</span>` : ""}</h2>
-          <div class="card rise">${text}${spec}</div>
+          <div class="card rise">${text}${spec}
+            ${p.fabric ? `<p class="k">Fabric</p><div class="gallery swatch">${shots(p.fabric, p.title + " 원단")}</div>` : ""}
+          </div>
         </div>
-        ${p.mood ? galleryHTML({ title: p.title, images: p.mood }) : ""}
-        ${p.fabric ? `<p class="part">Fabric</p><div class="gallery swatch">${shots(p.fabric, p.title)}</div>` : ""}
+        ${p.mood ? `<p class="part">Mood</p>` + galleryHTML({ title: p.title, images: p.mood }) : ""}
       </section>`;
     }
 
@@ -49,13 +50,15 @@ if (list) {
       media = `<div class="film ${p.ratio === "9:16" ? "tall" : ""}">
         <video src="${p.video}" poster="${p.poster}" controls playsinline preload="none"></video></div>`;
     } else if (p.flat) {
-      // 디자인 상품: 대표컷·도식화 / 룩북 / 제품·디테일컷
-      const part = (n, name, list) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(list.length)}</span></p>`;
-      media = `${part("A", "Model &amp; Flat Sketch", [p.cover, p.flat])}
-        <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}</div>
-        ${part("B", "Lookbook", p.look)}${galleryHTML({ title: p.title, images: p.look }, 8)}
-        ${part("C", "Product &amp; Detail", [...p.cuts, ...p.details])}
-        <div class="gallery tiles">${shots([...p.cuts, ...p.details], p.title)}</div>`;
+      // 디자인 상품: 대표컷·도식화·제품컷 한 줄 / 룩북 2줄 / 제품컷 1줄 + 디테일 1줄
+      const part = (n, name, count) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(count)}</span></p>`;
+      const cuts = p.cuts.slice(1);
+      media = `${part("A", "Overview", 3)}
+        <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}${shots(p.cuts.slice(0, 1), p.title)}</div>
+        ${part("B", "Lookbook", p.look.length)}${foldGrid("cols", p.look, p.title, 8)}
+        ${part("C", "Product &amp; Detail", cuts.length + p.details.length)}
+        <div class="fold-group">${foldGrid("tiles", cuts, p.title, 6, false)}${foldGrid("tiles", p.details, p.title, 6, false)}
+          ${cuts.length > 6 || p.details.length > 6 ? `<button class="pill more">+ ${Math.max(0, cuts.length - 6) + Math.max(0, p.details.length - 6)} 더 보기</button>` : ""}</div>`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }
@@ -74,7 +77,8 @@ if (list) {
   }).join("");
 
   list.querySelectorAll(".more").forEach((b) => b.addEventListener("click", () => {
-    b.previousElementSibling.classList.remove("folded");
+    const group = b.closest(".fold-group");
+    (group ? group.querySelectorAll(".folded") : [b.previousElementSibling]).forEach((g) => g.classList.remove("folded"));
     b.remove();
   }));
 
@@ -86,6 +90,13 @@ function shots(list, alt, cls = "", limit = Infinity) {
   return list.map(([src, w, h, cut], i) =>
     `<a class="shot${cls ? " " + cls : ""}${cut ? " cut" : ""}${w > h * 1.15 ? " land" : ""}${i >= limit ? " extra" : ""}" href="${src}">
       <img src="${src}" width="${w}" height="${h}" alt="${alt}" loading="lazy"></a>`).join("");
+}
+
+function foldGrid(kind, list, alt, limit, button = true) {
+  if (!list.length) return "";
+  const folded = list.length > limit;
+  return `<div class="gallery ${kind}${folded ? " folded" : ""}">${shots(list, alt, "", folded ? limit : Infinity)}</div>
+    ${folded && button ? `<button class="pill more">+ ${list.length - limit} 더 보기</button>` : ""}`;
 }
 
 function galleryHTML(p, show = SHOW) {

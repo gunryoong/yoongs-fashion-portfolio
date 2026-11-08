@@ -1240,9 +1240,50 @@ const PROJECTS = {
      "assets/design/d1-14.webp",
      1200,
      1800
+    ],
+    [
+     "assets/design/d1-s04.webp",
+     933,
+     1400
     ]
    ],
    "cuts": [
+    [
+     "assets/design/d1-s01.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s02.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s03.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s05.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s06.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s07.webp",
+     933,
+     1400,
+     1
+    ],
     [
      "assets/design/d1-16.webp",
      1200,
@@ -1256,6 +1297,29 @@ const PROJECTS = {
      1200,
      1800,
      1
+    ],
+    [
+     "assets/design/d1-s08.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s09.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s10.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d1-s11.webp",
+     933,
+     1400
     ]
    ]
   },
@@ -1340,6 +1404,18 @@ const PROJECTS = {
    ],
    "cuts": [
     [
+     "assets/design/d2-s01.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d2-s02.webp",
+     933,
+     1400,
+     1
+    ],
+    [
      "assets/design/d2-14.webp",
      1200,
      1800,
@@ -1386,6 +1462,12 @@ const PROJECTS = {
      "assets/design/d2-20.webp",
      1200,
      1800,
+     1
+    ],
+    [
+     "assets/design/d2-s03.webp",
+     933,
+     1400,
      1
     ]
    ]
@@ -1536,9 +1618,55 @@ const PROJECTS = {
      1200,
      1800,
      1
+    ],
+    [
+     "assets/design/d3-s04.webp",
+     933,
+     1400
+    ],
+    [
+     "assets/design/d3-s05.webp",
+     934,
+     1400
     ]
    ],
    "cuts": [
+    [
+     "assets/design/d3-s01.webp",
+     1400,
+     1359,
+     1
+    ],
+    [
+     "assets/design/d3-s02.webp",
+     1400,
+     1356,
+     1
+    ],
+    [
+     "assets/design/d3-s03.webp",
+     1400,
+     1347,
+     1
+    ],
+    [
+     "assets/design/d3-s10.webp",
+     1400,
+     1349,
+     1
+    ],
+    [
+     "assets/design/d3-s11.webp",
+     1400,
+     1361,
+     1
+    ],
+    [
+     "assets/design/d3-s12.webp",
+     1400,
+     1367,
+     1
+    ],
     [
      "assets/design/d3-17.webp",
      1800,
@@ -1575,6 +1703,30 @@ const PROJECTS = {
      "assets/design/d3-21.webp",
      1671,
      1800,
+     1
+    ],
+    [
+     "assets/design/d3-s06.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d3-s07.webp",
+     1400,
+     1197,
+     1
+    ],
+    [
+     "assets/design/d3-s08.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d3-s09.webp",
+     1299,
+     1400,
      1
     ]
    ]
@@ -1657,9 +1809,78 @@ const PROJECTS = {
      1200,
      1800,
      1
+    ],
+    [
+     "assets/design/d4-s04.webp",
+     933,
+     1400
+    ],
+    [
+     "assets/design/d4-s05.webp",
+     1400,
+     1303
+    ],
+    [
+     "assets/design/d4-s06.webp",
+     933,
+     1400
     ]
    ],
    "cuts": [
+    [
+     "assets/design/d4-s01.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s02.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s03.webp",
+     1400,
+     1370,
+     1
+    ],
+    [
+     "assets/design/d4-s07.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s09.webp",
+     1395,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s10.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s11.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s12.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d4-s13.webp",
+     933,
+     1400,
+     1
+    ],
     [
      "assets/design/d4-13.webp",
      1200,
@@ -1718,6 +1939,12 @@ const PROJECTS = {
      "assets/design/d4-22.webp",
      1200,
      1800,
+     1
+    ],
+    [
+     "assets/design/d4-s08.webp",
+     933,
+     1400,
      1
     ]
    ]
@@ -1845,9 +2072,79 @@ const PROJECTS = {
      1200,
      1800,
      1
+    ],
+    [
+     "assets/design/d5-s03.webp",
+     933,
+     1400
+    ],
+    [
+     "assets/design/d5-s04.webp",
+     933,
+     1400
+    ],
+    [
+     "assets/design/d5-s05.webp",
+     1400,
+     1400
     ]
    ],
-   "cuts": [],
+   "cuts": [
+    [
+     "assets/design/d5-s01.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s02.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s06.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s10.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s11.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s12.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s13.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s14.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s15.webp",
+     933,
+     1400,
+     1
+    ]
+   ],
    "details": [
     [
      "assets/design/d5-22.webp",
@@ -1888,6 +2185,24 @@ const PROJECTS = {
      "assets/design/d5-30.webp",
      1200,
      1800
+    ],
+    [
+     "assets/design/d5-s07.webp",
+     964,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s08.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d5-s09.webp",
+     933,
+     1400,
+     1
     ]
    ]
   },
@@ -2017,6 +2332,12 @@ const PROJECTS = {
    ],
    "cuts": [
     [
+     "assets/design/d6-s01.webp",
+     1400,
+     1400,
+     1
+    ],
+    [
      "assets/design/d6-02.webp",
      1800,
      1800,
@@ -2075,6 +2396,12 @@ const PROJECTS = {
      "assets/design/d6-20.webp",
      1800,
      1197,
+     1
+    ],
+    [
+     "assets/design/d6-s02.webp",
+     1128,
+     1400,
      1
     ]
    ]
@@ -2186,7 +2513,80 @@ const PROJECTS = {
      1800
     ]
    ],
-   "cuts": [],
+   "cuts": [
+    [
+     "assets/design/d7-s01.webp",
+     1167,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s02.webp",
+     1167,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s03.webp",
+     1167,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s04.webp",
+     1167,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s05.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s06.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s07.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s08.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s09.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s10.webp",
+     933,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s11.webp",
+     934,
+     1400,
+     1
+    ],
+    [
+     "assets/design/d7-s12.webp",
+     934,
+     1400,
+     1
+    ]
+   ],
    "details": [
     [
      "assets/design/d7-17.webp",
@@ -2331,6 +2731,16 @@ const PROJECTS = {
      "assets/design/d8-20.webp",
      1200,
      1800
+    ],
+    [
+     "assets/design/d8-s01.webp",
+     933,
+     1400
+    ],
+    [
+     "assets/design/d8-s02.webp",
+     933,
+     1400
     ]
    ],
    "cuts": [
