@@ -1166,8 +1166,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat1-01.webp",
-    1690,
-    882,
+    1926,
+    1118,
     1
    ],
    "look": [
@@ -1346,8 +1346,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat2-01.webp",
-    1574,
-    850,
+    1794,
+    1070,
     1
    ],
    "look": [
@@ -1552,8 +1552,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat3-01.webp",
-    1628,
-    773,
+    1854,
+    999,
     1
    ],
    "look": [
@@ -1753,8 +1753,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat4-01.webp",
-    1608,
-    841,
+    1832,
+    1065,
     1
    ],
    "look": [
@@ -1971,8 +1971,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat5-01.webp",
-    1072,
-    931,
+    1222,
+    1081,
     1
    ],
    "look": [
@@ -2274,8 +2274,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat6-01.webp",
-    1660,
-    807,
+    1892,
+    1039,
     1
    ],
    "look": [
@@ -2427,8 +2427,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat7-01.webp",
-    1631,
-    832,
+    1859,
+    1060,
     1
    ],
    "look": [
@@ -2647,8 +2647,8 @@ const PROJECTS = {
    ],
    "flat": [
     "assets/design/flat8-01.webp",
-    1106,
-    906,
+    1260,
+    1060,
     1
    ],
    "look": [
