@@ -2862,17 +2862,12 @@ const PROJECTS = {
    "pairs": true,
    "images": [
     [
-     "assets/web/retouch-01.webp",
-     1200,
-     1800
-    ],
-    [
      "assets/web/retouch-02.webp",
      1200,
      1800
     ],
     [
-     "assets/web/retouch-03.webp",
+     "assets/web/retouch-01.webp",
      1200,
      1800
     ],
@@ -2882,7 +2877,7 @@ const PROJECTS = {
      1800
     ],
     [
-     "assets/web/retouch-05.webp",
+     "assets/web/retouch-03.webp",
      1200,
      1800
     ],
@@ -2892,7 +2887,7 @@ const PROJECTS = {
      1800
     ],
     [
-     "assets/web/retouch-07.webp",
+     "assets/web/retouch-05.webp",
      1200,
      1800
     ],
@@ -2902,7 +2897,7 @@ const PROJECTS = {
      1800
     ],
     [
-     "assets/web/retouch-09.webp",
+     "assets/web/retouch-07.webp",
      1200,
      1800
     ],
@@ -2912,7 +2907,7 @@ const PROJECTS = {
      1800
     ],
     [
-     "assets/web/retouch-11.webp",
+     "assets/web/retouch-09.webp",
      1200,
      1800
     ],
@@ -2922,12 +2917,17 @@ const PROJECTS = {
      1800
     ],
     [
-     "assets/web/retouch-13.webp",
+     "assets/web/retouch-11.webp",
      1200,
      1800
     ],
     [
      "assets/web/retouch-14.webp",
+     1200,
+     1800
+    ],
+    [
+     "assets/web/retouch-13.webp",
      1200,
      1800
     ]
