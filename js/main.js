@@ -41,7 +41,7 @@ if (list) {
             ${p.fabric ? `<p class="k">Fabric</p><div class="gallery swatch">${shots(p.fabric, p.title + " 원단")}</div>` : ""}
           </div>
         </div>
-        ${p.mood ? `<p class="part">Mood</p>` + galleryHTML({ title: p.title, images: p.mood }) : ""}
+        ${p.mood ? `<p class="part">Mood</p><div class="gallery board n${p.mood.length}">${shots(p.mood, p.title + " 무드")}</div>` : ""}
       </section>`;
     }
 
@@ -54,7 +54,7 @@ if (list) {
       const part = (n, name, count) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(count)}</span></p>`;
       media = `${part("A", "Overview", 3)}
         <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}${shots(p.cuts.slice(0, 1), p.title)}</div>
-        ${part("B", "Lookbook", p.look.length)}${foldGrid("cols", p.look, p.title, 8)}`;
+        ${part("B", "Lookbook", p.look.length)}${foldGrid("look", p.look, p.title, 8)}`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }

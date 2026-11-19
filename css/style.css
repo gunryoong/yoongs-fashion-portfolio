@@ -148,12 +148,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   gap: var(--gap);
-  align-items: end;
+  align-items: start;
   margin-bottom: var(--gap);
 }
 .project-head h2 { font-size: clamp(34px, 4.6vw, 80px); }
 .project-head h2 .sub { display: block; color: var(--mute); }
-.project-head .card { align-self: stretch; display: flex; flex-direction: column; gap: 10px; }
+.project-head .card { align-self: start; display: flex; flex-direction: column; gap: 10px; }
 .tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .tags span {
   border: 1px solid var(--ink); border-radius: 999px;
@@ -193,7 +193,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .part span { margin-left: auto; color: var(--mute); }
 .gallery.lead { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .gallery.lead .shot { aspect-ratio: 2 / 3; }
-.gallery.lead .flat { grid-column: span 2; aspect-ratio: auto; }
+.gallery.lead .flat { grid-column: span 2; aspect-ratio: auto; position: relative; }
+.gallery.lead .flat img { position: absolute; inset: 0; padding: 3%; }
 .gallery .flat:hover img { transform: none; }
 .gallery.lead img { width: 100%; height: 100%; object-fit: cover; }
 .gallery.tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); }
@@ -201,6 +202,27 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .gallery.tiles img { width: 100%; height: 100%; object-fit: cover; }
 .gallery .flat img, .gallery .cut img { object-fit: contain; }
 .gallery.tiles .cut { padding: 6%; }
+/* 룩북: 한 줄 8장 */
+.gallery.look { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+.gallery.look .shot { aspect-ratio: 2 / 3; border-radius: 6px; }
+.gallery.look img { width: 100%; height: 100%; object-fit: cover; }
+/* 무드보드: 기획판처럼 크기를 섞어 빈틈없이 배치 */
+.gallery.board { grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: clamp(34px, 4.2vw, 64px); }
+.gallery.board .shot { aspect-ratio: auto; }
+.gallery.board img { width: 100%; height: 100%; object-fit: cover; }
+.gallery.board .cut img { object-fit: contain; padding: 6%; }
+.board.n2 .shot:nth-child(1) { grid-column: 1 / 6; grid-row: 1 / 10; }
+.board.n2 .shot:nth-child(2) { grid-column: 6 / 13; grid-row: 1 / 10; }
+.board.n4 .shot:nth-child(1) { grid-column: 1 / 6; grid-row: 1 / 10; }
+.board.n4 .shot:nth-child(2) { grid-column: 6 / 9; grid-row: 1 / 6; }
+.board.n4 .shot:nth-child(3) { grid-column: 9 / 13; grid-row: 1 / 6; }
+.board.n4 .shot:nth-child(4) { grid-column: 6 / 13; grid-row: 6 / 10; }
+.board.n6 .shot:nth-child(1) { grid-column: 1 / 5; grid-row: 1 / 7; }
+.board.n6 .shot:nth-child(2) { grid-column: 5 / 9; grid-row: 1 / 5; }
+.board.n6 .shot:nth-child(3) { grid-column: 9 / 13; grid-row: 1 / 6; }
+.board.n6 .shot:nth-child(4) { grid-column: 1 / 5; grid-row: 7 / 10; }
+.board.n6 .shot:nth-child(5) { grid-column: 5 / 9; grid-row: 5 / 10; }
+.board.n6 .shot:nth-child(6) { grid-column: 9 / 13; grid-row: 6 / 10; }
 .fold-group .gallery + .gallery { margin-top: 8px; }
 .card .gallery.swatch { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; }
 .gallery.swatch .shot { aspect-ratio: 1 / 1; border-radius: 4px; }
@@ -267,6 +289,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .gallery.pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery.lead { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery.lead .flat { order: -1; grid-column: span 2; aspect-ratio: 2 / 1; }
+  .gallery.look { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .gallery.board { grid-auto-rows: 7vw; }
   .gallery.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .collection { padding-top: 70px; }
   .film.tall video { max-height: 70vh; }
