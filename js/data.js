@@ -1204,9 +1204,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/fw26/cut-uhd35.webp",
-     1009,
-     1118,
+     "assets/design/fw26/std-cut-uhd35.webp",
+     1200,
+     1800,
      1
     ]
    ],
@@ -1240,9 +1240,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/fw26/cut-umm34.webp",
-     783,
-     798,
+     "assets/design/fw26/std-cut-umm34.webp",
+     1200,
+     1800,
      1
     ]
    ],
@@ -1276,9 +1276,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/fw26/cut-waffle.webp",
-     553,
-     672,
+     "assets/design/fw26/std-cut-waffle.webp",
+     1200,
+     1800,
      1
     ]
    ],
@@ -1312,9 +1312,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/fw26/cut-upt26.webp",
-     390,
-     672,
+     "assets/design/fw26/std-cut-upt26.webp",
+     1200,
+     1800,
      1
     ]
    ],
@@ -1489,9 +1489,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d1-s01-t.webp",
-     933,
-     1016,
+     "assets/design/std-d1-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -1644,9 +1644,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d2-s01-t.webp",
-     708,
-     753,
+     "assets/design/std-d2-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -1873,9 +1873,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d3-s01.webp",
-     1400,
-     1359,
+     "assets/design/std-d3-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -2069,9 +2069,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d4-s01-t.webp",
-     920,
-     896,
+     "assets/design/std-d4-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -2332,9 +2332,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d5-s01-t.webp",
-     829,
-     1242,
+     "assets/design/std-d5-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -2574,9 +2574,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d6-s01.webp",
-     1400,
-     1400,
+     "assets/design/std-d6-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -2757,9 +2757,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d7-s01.webp",
-     1167,
-     1400,
+     "assets/design/std-d7-s01.webp",
+     1200,
+     1800,
      1
     ],
     [
@@ -2987,9 +2987,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d8-02-t.webp",
-     678,
-     1317,
+     "assets/design/std-d8-02.webp",
+     1200,
+     1800,
      1
     ],
     [
