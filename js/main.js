@@ -34,7 +34,7 @@ if (list) {
     // 컬렉션 머리: 무드 이미지 + 원단
     if (p.kind === "collection") {
       return `<section class="collection" id="${p.id}">
-        <p class="label">Collection</p>
+        <p class="label">${p.brand || "Collection"}</p>
         <div class="project-head">
           <h2 class="display rise">${p.title}${p.sub ? `<span class="sub">${p.sub}</span>` : ""}</h2>
           <div class="card rise">${text}${spec}
