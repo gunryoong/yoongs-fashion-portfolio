@@ -54,7 +54,7 @@ if (list) {
       const part = (n, name, count) => `<p class="part"><b>${n}</b> ${name} <span>${pad2(count)}</span></p>`;
       media = `${part("A", "Overview", 3)}
         <div class="gallery lead">${shots([p.cover], p.title)}${shots([p.flat], p.title + " 도식화", "flat")}${shots(p.cuts.slice(0, 1), p.title)}</div>
-        ${part("B", "Lookbook", p.look.length)}${foldGrid("look", p.look, p.title, 8)}`;
+        ${p.look.length ? part("B", "Lookbook", p.look.length) + foldGrid("look", p.look, p.title, 8) : ""}`;
     } else if (p.images && p.images.length) {
       media = galleryHTML(p);
     }

@@ -1105,7 +1105,7 @@ const PROJECTS = {
     "Tech Pack"
    ],
    "text": [
-    "앞·뒤 도식화에 봉제·부자재 지시를 번호로 표시하고, 오른쪽에 사양을 정리했습니다."
+    "실제 작업지시서에서 봉제·부자재 캡션을 달았던 위치를 번호로 표시하고, 캡션 내용은 오른쪽에 정리했습니다."
    ],
    "images": [
     [
@@ -1159,6 +1159,166 @@ const PROJECTS = {
      1350
     ]
    ]
+  },
+  {
+   "kind": "collection",
+   "id": "outdoor-26fw",
+   "brand": "OUTDOOR PRODUCTS · 26 F/W",
+   "title": "OUTDOOR PRODUCTS",
+   "sub": "26 F/W Collection",
+   "text": [
+    "브랜드 아카이브 로고와 그래픽을 현재의 오버핏 실루엣에 맞게 재해석한 26 F/W 스웨트·팬츠 라인입니다.",
+    "작업지시서 작성부터 아트웍 기법(발염·자수·라바), 리브·봉제 사양까지 직접 진행했습니다."
+   ],
+   "spec": [
+    "Top — 아카이브 로고 맨투맨, 트리 로고 자수 맨투맨, 와플 반여밈 후디",
+    "Bottom — 나일론 카고 와이드 팬츠",
+    "Fabric — Zurry 400~420g / Waffle / Nylon"
+   ]
+  },
+  {
+   "id": "archive-logo-sweatshirt",
+   "title": "ARCHIVE LOGO SWEATSHIRT",
+   "tags": [
+    "Top"
+   ],
+   "text": [
+    "아카이브 로고 그래픽을 등판에 크게 배치한 세미 오버핏 맨투맨입니다.",
+    "가슴은 발염 와펜, 등판은 발염에 직자수를 더해 그래픽에 입체감을 주었습니다."
+   ],
+   "spec": [
+    "Design — 넥·소매·밑단 2×1 리브 갈라 삼봉, 넥 헤링본 테이프",
+    "Color — Black / Charcoal / Oatmeal",
+    "Fabric — Zurry 400g"
+   ],
+   "cover": [
+    "assets/design/fw26/cover-uhd35.webp",
+    1364,
+    1800
+   ],
+   "flat": [
+    "assets/design/fw26/flat-uhd35.webp",
+    2400,
+    1350,
+    1
+   ],
+   "cuts": [
+    [
+     "assets/design/fw26/cut-uhd35.webp",
+     1009,
+     1118,
+     1
+    ]
+   ],
+   "look": []
+  },
+  {
+   "id": "tree-logo-sweatshirt",
+   "title": "TREE LOGO EMBROIDERY SWEATSHIRT",
+   "tags": [
+    "Top"
+   ],
+   "text": [
+    "트리 로고를 가슴 자수와 등판 라바 + 자수로 표현한 세미 오버핏 맨투맨입니다.",
+    "도톰한 420g 쭈리 원단으로 F/W 시즌 단독 착용이 가능하도록 했습니다."
+   ],
+   "spec": [
+    "Design — 가슴 자수, 등판 라바 + 자수, 2×1 리브 갈라 삼봉",
+    "Color — Black / Mustard / Oatmeal",
+    "Fabric — C/P 90/10 Zurry 420g"
+   ],
+   "cover": [
+    "assets/design/fw26/cover-umm34.webp",
+    939,
+    939
+   ],
+   "flat": [
+    "assets/design/fw26/flat-umm34.webp",
+    2400,
+    1350,
+    1
+   ],
+   "cuts": [
+    [
+     "assets/design/fw26/cut-umm34.webp",
+     783,
+     798,
+     1
+    ]
+   ],
+   "look": []
+  },
+  {
+   "id": "waffle-hoodie",
+   "title": "WAFFLE HALF-BUTTON HOODIE",
+   "tags": [
+    "Top"
+   ],
+   "text": [
+    "와플 조직 원단에 피그먼트 워싱을 더한 반여밈 후디입니다.",
+    "앞여밈에 가시 스냅을 달아 넥 라인을 조절할 수 있고, 2겹 후드로 형태감을 살렸습니다."
+   ],
+   "spec": [
+    "Design — 4×10.5cm 앞여밈 + 13mm 가시 스냅, 2겹 후드, 로고 와펜",
+    "Wash — Pigment Washing",
+    "Fabric — Waffle"
+   ],
+   "cover": [
+    "assets/design/fw26/cover-waffle.webp",
+    1000,
+    1000
+   ],
+   "flat": [
+    "assets/design/fw26/flat-waffle.webp",
+    2400,
+    1350,
+    1
+   ],
+   "cuts": [
+    [
+     "assets/design/fw26/cut-waffle.webp",
+     553,
+     672,
+     1
+    ]
+   ],
+   "look": []
+  },
+  {
+   "id": "nylon-cargo-pants",
+   "title": "NYLON CARGO WIDE PANTS",
+   "tags": [
+    "Bottom"
+   ],
+   "text": [
+    "가벼운 나일론 소재의 와이드 카고 팬츠입니다.",
+    "고무 밴드 허리에 스트링과 D링을 더하고, 밑단 안쪽 E-스트링으로 실루엣을 조절할 수 있습니다."
+   ],
+   "spec": [
+    "Design — 앞 턱, 덮개 카고 포켓 + 10mm 스냅, 밑단 E-스트링 + 2구 스토퍼",
+    "Color — Black / Charcoal",
+    "Fabric — Nylon / Poly"
+   ],
+   "cover": [
+    "assets/design/fw26/cover-upt26.webp",
+    1000,
+    1000
+   ],
+   "flat": [
+    "assets/design/fw26/flat-upt26.webp",
+    2400,
+    1350,
+    1
+   ],
+   "cuts": [
+    [
+     "assets/design/fw26/cut-upt26.webp",
+     390,
+     672,
+     1
+    ]
+   ],
+   "look": []
   },
   {
    "kind": "collection",
