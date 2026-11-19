@@ -1109,52 +1109,52 @@ const PROJECTS = {
    ],
    "images": [
     [
-     "assets/design/tech/tech-m-vjp-22.webp",
+     "assets/design/tech/tech-m-vjp-22.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-vjp-02.webp",
+     "assets/design/tech/tech-m-vjp-02.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-vvt-22.webp",
+     "assets/design/tech/tech-m-vvt-22.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-vsj-29.webp",
+     "assets/design/tech/tech-m-vsj-29.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-vpt-01.webp",
+     "assets/design/tech/tech-m-vpt-01.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-vpt-12.webp",
+     "assets/design/tech/tech-m-vpt-12.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-w-vtg-62.webp",
+     "assets/design/tech/tech-w-vtg-62.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-crop-hoodie.webp",
+     "assets/design/tech/tech-crop-hoodie.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-w-vtg-70.webp",
+     "assets/design/tech/tech-w-vtg-70.webp?v=20261119c",
      2400,
      1350
     ],
     [
-     "assets/design/tech/tech-m-tvg-01.webp",
+     "assets/design/tech/tech-m-tvg-01.webp?v=20261119c",
      2400,
      1350
     ]
