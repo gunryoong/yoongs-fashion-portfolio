@@ -2848,6 +2848,84 @@ const PROJECTS = {
      1800
     ]
    ]
+  },
+  {
+   "kind": "collection",
+   "id": "tech-pack-27ss",
+   "title": "27SS TECH PACK",
+   "sub": "Technical Flats & Sewing Construction",
+   "text": [
+    "아우터부터 하의, 티셔츠까지 직접 작성한 27SS 메인 작업지시서의 도식화입니다.",
+    "봉제 방식·부자재·스티치 사양을 번호로 정리해, 생산 공장이 바로 읽을 수 있는 수준의 기술 사양을 보여줍니다."
+   ],
+   "spec": [
+    "Outer — 후드 바람막이, 아노락 재킷, 유틸리티 베스트, 반팔 셔츠 재킷",
+    "Bottom — 카고 팬츠, 벌룬 팬츠",
+    "Top — 래글런 맨투맨, 크롭 후디, 그래픽·레터링 티셔츠"
+   ]
+  },
+  {
+   "id": "tech-flats",
+   "title": "TECHNICAL FLATS",
+   "sub": "10 Styles",
+   "tags": [
+    "Tech Pack"
+   ],
+   "text": [
+    "앞·뒤 도식화에 봉제·부자재 지시를 번호로 표시하고, 오른쪽에 사양을 정리했습니다."
+   ],
+   "images": [
+    [
+     "assets/design/tech/tech-m-vjp-22.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-vjp-02.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-vvt-22.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-vsj-29.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-vpt-01.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-vpt-12.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-w-vtg-62.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-crop-hoodie.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-w-vtg-70.webp",
+     2400,
+     1350
+    ],
+    [
+     "assets/design/tech/tech-m-tvg-01.webp",
+     2400,
+     1350
+    ]
+   ]
   }
  ],
  "web": [
