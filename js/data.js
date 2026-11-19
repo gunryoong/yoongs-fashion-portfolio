@@ -1329,9 +1329,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d1-s01.webp",
+     "assets/design/d1-s01-t.webp",
      933,
-     1400,
+     1016,
      1
     ],
     [
@@ -1484,9 +1484,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d2-s01.webp",
-     933,
-     1400,
+     "assets/design/d2-s01-t.webp",
+     708,
+     753,
      1
     ],
     [
@@ -1909,9 +1909,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d4-s01.webp",
-     933,
-     1400,
+     "assets/design/d4-s01-t.webp",
+     920,
+     896,
      1
     ],
     [
@@ -2172,9 +2172,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d5-s01.webp",
-     933,
-     1400,
+     "assets/design/d5-s01-t.webp",
+     829,
+     1242,
      1
     ],
     [
@@ -2350,9 +2350,9 @@ const PROJECTS = {
     "Fabric — Outshell Polyurethane 100% · Lining Polyester 100%"
    ],
    "cover": [
-    "assets/design/cover6-01.webp",
-    1200,
-    1800
+    "assets/design/cover6-01-t.webp",
+    1126,
+    1677
    ],
    "flat": [
     "assets/design/flat6-01.webp",
@@ -2723,9 +2723,9 @@ const PROJECTS = {
     "Fabric — Cotton 100% Peach Twill"
    ],
    "cover": [
-    "assets/design/cover8-01.webp",
-    1200,
-    1800
+    "assets/design/cover8-01-t.webp",
+    1053,
+    1579
    ],
    "flat": [
     "assets/design/flat8-01.webp",
@@ -2827,9 +2827,9 @@ const PROJECTS = {
    ],
    "cuts": [
     [
-     "assets/design/d8-02.webp",
-     1800,
-     1800,
+     "assets/design/d8-02-t.webp",
+     678,
+     1317,
      1
     ],
     [
